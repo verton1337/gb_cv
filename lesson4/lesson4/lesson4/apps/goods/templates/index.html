@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<ul class="things">
+{% for thing in object_list %}
+
+<li> {{ thing.name }} ${{ thing.price }} за {{ thing.qty }}</li>
+
+{% endfor %}
+
+</ul>
+{% endblock %}
